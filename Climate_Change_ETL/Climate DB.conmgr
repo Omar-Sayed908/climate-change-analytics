@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Climate DB"
+  DTS:DTSID="{5DD3E255-89A5-4C98-9024-D8485EECA6F1}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-1NHA87D;Initial Catalog=Climate;Provider=MSOLEDBSQL19.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{5DD3E255-89A5-4C98-9024-D8485EECA6F1}DESKTOP-1NHA87D;Trust Server Certificate=True;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

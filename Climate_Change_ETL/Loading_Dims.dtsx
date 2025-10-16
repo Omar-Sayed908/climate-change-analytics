@@ -11,311 +11,10 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Loading_Dims"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{CF4C44DE-02F1-441F-B7A2-06743B03C8A3}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{5E196FF4-022A-44FE-B955-ECE1B6541552}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Climate DB]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{5DD3E255-89A5-4C98-9024-D8485EECA6F1}"
-      DTS:ObjectName="Climate DB">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-1NHA87D;Initial Catalog=Climate;Provider=MSOLEDBSQL19.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{5DD3E255-89A5-4C98-9024-D8485EECA6F1}DESKTOP-1NHA87D;Trust Server Certificate=True;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}"
-      DTS:ObjectName="Excel Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\DEPI\GP\DEPI_Final_Project\excel\Ready_To_Load_Data.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{84DB56D3-1A9C-4FB8-BCF1-930437C662F2}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\doali\OneDrive\Desktop\n.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REF_AREA"
-              DTS:DTSID="{68F6603B-655A-483A-A488-BAC5A6E995C0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REF_AREA_LABEL"
-              DTS:DTSID="{E375E453-DC18-46AD-869D-34C529B18EC6}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{062F7109-9004-4DD8-BCC3-3BDBFA78B201}"
-      DTS:ObjectName="Flat File Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\DEPI\GP\DEPI_Final_Project\dataset\Countries.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="name"
-              DTS:DTSID="{6FB7A5AA-504D-47A9-9309-84C4D741E934}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="alpha-2"
-              DTS:DTSID="{615AD41F-1070-4201-85EC-1B680740B512}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="alpha-3"
-              DTS:DTSID="{EA46CD9E-0D4D-4B95-B47C-0A4E2009E290}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country-code"
-              DTS:DTSID="{05DF80F9-1537-40EA-9530-E3C82A841434}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="iso_3166-2"
-              DTS:DTSID="{E93B5597-EEC5-4A6B-923B-98A973E841DA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="region"
-              DTS:DTSID="{00179614-DC92-4EDB-8E29-6D662529E021}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sub-region"
-              DTS:DTSID="{536179A1-CCC5-4266-A9AA-8146316C764C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="intermediate-region"
-              DTS:DTSID="{0F4B9C4A-ADA8-41E0-95F3-583DBC860D0F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="region-code"
-              DTS:DTSID="{70ED32E5-B3EB-4ED1-AF90-77A259873C2D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sub-region-code"
-              DTS:DTSID="{27E8E643-BE1B-44CB-9661-6746C72E50E0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="intermediate-region-code"
-              DTS:DTSID="{963F135E-038D-404A-8048-824251C7DCE1}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B8FBECAE-8640-4FF1-9B98-84F930CAE6CA}"
-      DTS:ObjectName="Flat File Connection Manager 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\DEPI\GP\DEPI_Final_Project\dataset\Countries.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="100"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="name"
-              DTS:DTSID="{2CAE6980-4E43-4BAB-9B5F-8D65F817B329}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="alpha-2"
-              DTS:DTSID="{750B068C-6DF3-4AE7-BE5D-C8FCA92ED141}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="alpha-3"
-              DTS:DTSID="{BE785151-C47D-4313-884B-A80AA97BE180}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country-code"
-              DTS:DTSID="{BFF5AEBC-47BA-4E38-B641-FC2BAE89A9C4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="iso_3166-2"
-              DTS:DTSID="{F78292DE-C665-4A98-A75F-904CFCB06C97}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="region"
-              DTS:DTSID="{2AC065CC-C3D2-4ECC-86A6-EFEF0B2B58D2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sub-region"
-              DTS:DTSID="{86AEC36F-51A0-4D8D-83B1-9DEF0091412E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="intermediate-region"
-              DTS:DTSID="{C5CB29E6-03DA-48DB-85E6-40A1CA81C593}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="region-code"
-              DTS:DTSID="{798ECFE3-7076-4FEA-9CCD-EBFCB0C347A0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="sub-region-code"
-              DTS:DTSID="{F81387C6-768F-4032-B54F-586ED2A4D5AA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="intermediate-region-code"
-              DTS:DTSID="{4A09E576-7DF2-403A-9B84-7D3E6E6BB70A}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -375,8 +74,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Access to Safe Drinking Water.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -668,8 +367,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Anemia in aged Women.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -961,8 +660,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Annual CO2 Emissions.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1254,8 +953,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Child Stunting (Under 5 Years).Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1556,8 +1255,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Child Wasting (Under 5 Years).Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1883,8 +1582,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\CO2 Emissions per Unit (Intensity).Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2284,8 +1983,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Land-Use Change CO2 Emissions.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2577,8 +2276,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Mean BMI (Under 5 Years).Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2896,8 +2595,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Climate DB]"
-                  connectionManagerRefId="Package.ConnectionManagers[Climate DB]"
+                  connectionManagerID="{5DD3E255-89A5-4C98-9024-D8485EECA6F1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Climate DB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3127,8 +2826,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Total CO2 Emissions (Cumulative).Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3420,8 +3119,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Under-5 Mortality Rate.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4186,8 +3885,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Urban Population Share.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4479,8 +4178,8 @@
               <connections>
                 <connection
                   refId="Package\Load Countries\Water Quality Index.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5115,8 +4814,8 @@
               <connections>
                 <connection
                   refId="Package\Load Indicators\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5311,8 +5010,8 @@
               <connections>
                 <connection
                   refId="Package\Load Indicators\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Climate DB]"
-                  connectionManagerRefId="Package.ConnectionManagers[Climate DB]"
+                  connectionManagerID="{5DD3E255-89A5-4C98-9024-D8485EECA6F1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Climate DB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5489,8 +5188,8 @@
               <connections>
                 <connection
                   refId="Package\Load Regions\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerID="{B8FBECAE-8640-4FF1-9B98-84F930CAE6CA}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File Connection Manager 2]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -5714,8 +5413,8 @@ where [refTable].[ISO_Code] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load Regions\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Climate DB]"
-                  connectionManagerRefId="Package.ConnectionManagers[Climate DB]"
+                  connectionManagerID="{5DD3E255-89A5-4C98-9024-D8485EECA6F1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Climate DB]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5851,8 +5550,8 @@ WHERE ISO_Code = ?
               <connections>
                 <connection
                   refId="Package\Load Regions\OLE DB Command.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Climate DB]"
-                  connectionManagerRefId="Package.ConnectionManagers[Climate DB]"
+                  connectionManagerID="{5DD3E255-89A5-4C98-9024-D8485EECA6F1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Climate DB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6123,8 +5822,8 @@ WHERE ISO_Code = ?
               <connections>
                 <connection
                   refId="Package\Load Source\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="{DDD24FD0-FDEB-425C-9AA8-8B8BCDE37B79}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6273,8 +5972,8 @@ WHERE ISO_Code = ?
               <connections>
                 <connection
                   refId="Package\Load Source\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Climate DB]"
-                  connectionManagerRefId="Package.ConnectionManagers[Climate DB]"
+                  connectionManagerID="{5DD3E255-89A5-4C98-9024-D8485EECA6F1}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Climate DB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6417,6 +6116,10 @@ WHERE ISO_Code = ?
           Id="Package\Load Countries"
           TopLeft="275.5,53.5" />
         <NodeLayout
+          Size="154,42"
+          Id="Package\Load Indicators"
+          TopLeft="274.25,323.5" />
+        <NodeLayout
           Size="147,42"
           Id="Package\Load Regions"
           TopLeft="276.5,141" />
@@ -6468,10 +6171,6 @@ WHERE ISO_Code = ?
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Load Indicators"
-          TopLeft="274.25,323.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="349.125,273.5">
@@ -7213,6 +6912,122 @@ WHERE ISO_Code = ?
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Load Indicators">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Load Indicators\Excel Source"
+          TopLeft="348.571428571429,50" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Load Indicators\Data Conversion"
+          TopLeft="339.5,144.5" />
+        <EdgeLayout
+          Id="Package\Load Indicators.Paths[Excel Source Output]"
+          TopLeft="420.285714285715,92">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.5"
+              Start="0,0"
+              End="0,45">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Load Indicators\OLE DB Destination"
+          TopLeft="331.5,340.5" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Load Indicators\Derived Column"
+          TopLeft="341,236" />
+        <EdgeLayout
+          Id="Package\Load Indicators.Paths[Data Conversion Output]"
+          TopLeft="420,186.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49.5"
+              Start="0,0"
+              End="0,42">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Indicators.Paths[Derived Column Output]"
+          TopLeft="420,278">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62.5"
+              Start="0,0"
+              End="0,55">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Indicators\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Indicators\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Load Regions">
     <LayoutInfo>
       <GraphLayout
@@ -7357,122 +7172,6 @@ WHERE ISO_Code = ?
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Source\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load Indicators">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Load Indicators\Excel Source"
-          TopLeft="348.571428571429,50" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Load Indicators\Data Conversion"
-          TopLeft="339.5,144.5" />
-        <EdgeLayout
-          Id="Package\Load Indicators.Paths[Excel Source Output]"
-          TopLeft="420.285714285715,92">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.5"
-              Start="0,0"
-              End="0,45">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Load Indicators\OLE DB Destination"
-          TopLeft="331.5,340.5" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Load Indicators\Derived Column"
-          TopLeft="341,236" />
-        <EdgeLayout
-          Id="Package\Load Indicators.Paths[Data Conversion Output]"
-          TopLeft="420,186.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49.5"
-              Start="0,0"
-              End="0,42">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Indicators.Paths[Derived Column Output]"
-          TopLeft="420,278">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,62.5"
-              Start="0,0"
-              End="0,55">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Indicators\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Indicators\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
