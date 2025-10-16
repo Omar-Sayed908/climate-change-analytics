@@ -16,9 +16,21 @@ It aims to reveal how human activities and climate-related factors correlate wit
 ---
 
 ## 🧩 Datasets
+
 | Dataset | Description | Example Source |
 |----------|--------------|----------------|
-| CO₂ Emissions Data | Annual and cumulative emissions per country | [Our World in Data](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions) |
+| **Total CO₂ Emissions (Cumulative)** | Cumulative national CO₂ emissions over time. | [OWID](https://data360.worldbank.org/en/indicator/OWID_CB_CUMULATIVE_CO2_INCLUDING_LUC) |
+| **Annual CO₂ Emissions** | Yearly CO₂ emissions per country. | [OWID](https://data360.worldbank.org/en/indicator/OWID_CB_CONSUMPTION_CO2_PER_CAPITA) |
+| **Land-Use Change CO₂ Emissions** | CO₂ from deforestation and land-use changes. | [OWID](https://data360.worldbank.org/en/indicator/OWID_CB_LAND_USE_CHANGE_CO2) |
+| **CO₂ Emissions per Unit (Intensity)** | CO₂ emitted per unit of energy or GDP. | [OWID](https://data360.worldbank.org/en/indicator/OWID_CB_CO2_INCLUDING_LUC_PER_UNIT_ENERGY) |
+| **Water Quality Index** | Measures water suitability for use. | [WB](https://data360.worldbank.org/en/indicator/WB_CLEAR_WATQ_NS) |
+| **Access to Safe Drinking Water** | Share of population with safe water access. | [WHO](https://data360.worldbank.org/en/indicator/WB_CLEAR_JMP_DW_SFMS) |
+| **Urban Population Share** | Population living in urban areas (%). | [WB](https://data360.worldbank.org/en/indicator/WB_CLEAR_SP_URB_TOTL_IN_ZS) |
+| **Anemia in Aged Women** | Pregnant women with anemia (%). | [GHO](https://data360.worldbank.org/en/indicator/WHO_GHO_NUTRITION_ANAEMIA_PREGNANT_PREV) |
+| **Child Stunting (Under 5 Years)** | Children under 5 with low height for age. | [UNICEF](https://data360.worldbank.org/en/indicator/UNICEF_DW_NT_ANT_HAZ_NE2) |
+| **Child Wasting (Under 5 Years)** | Children under 5 with low weight for height. | [WDI](https://data360.worldbank.org/en/indicator/WB_WDI_SH_STA_WAST_ZS) |
+| **Under-5 Mortality Rate** | Deaths under age 5 per 1,000 births. | [WB_WDI](https://data360.worldbank.org/en/indicator/WB_WDI_SH_DYN_MORT) |
+| **Mean BMI (Under 5 Years)** | Average BMI of children under 5. | [UNICEF_WB](https://data360.worldbank.org/en/indicator/UNICEF_DW_NT_ANT_BAZ_AVG) |
 
 ---
 
