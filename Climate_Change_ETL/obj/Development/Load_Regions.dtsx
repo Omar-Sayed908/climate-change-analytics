@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{EA5779FA-BDF1-41AB-85A5-F1D9D43CE378}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{FC2384AC-B099-47E6-83E6-10123E708F94}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -847,40 +847,28 @@ WHERE ISO_Code = ?
         <NodeLayout
           Size="173,42"
           Id="Package\Load Regions\OLE DB Command"
-          TopLeft="71,276" />
+          TopLeft="133,283" />
         <EdgeLayout
           Id="Package\Load Regions.Paths[Lookup Match Output]"
-          TopLeft="218.5,225">
+          TopLeft="219,225">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-61,51"
+              EndConnector="0,58"
               Start="0,0"
-              End="-61,43.5">
+              End="0,50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5"
-                    Point2="0,25.5"
-                    Point3="-4,25.5" />
-                  <mssgle:LineSegment
-                    End="-57,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-57,25.5"
-                    Point2="-61,25.5"
-                    Point3="-61,29.5" />
-                  <mssgle:LineSegment
-                    End="-61,43.5" />
+                    End="0,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-78.69138671875,30.5,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,19.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
