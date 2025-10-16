@@ -1,4 +1,7 @@
-create database climate_changes 
+create database Climate 
+GO
+USE Climate
+GO
 create table source
 (source_id int primary key,
 source_name varchar(50),
@@ -16,14 +19,14 @@ CREATE TABLE Indicator (
     Updated_At DATE default getdate(),
     Unit VARCHAR(20),
     S_ID INT,
-    FOREIGN KEY (S_ID) REFERENCES Source(Source_ID)
+    FOREIGN KEY (S_ID) REFERENCES Source(Source_ID) ON DELETE CASCADE
 );
 
 -- Country Table
 CREATE TABLE Country (
-    Country_ID INT PRIMARY KEY,
+    Country_ID INT PRIMARY KEY IDENTITY(1, 1),
     Country_Name VARCHAR(50),
-    Region VARCHAR(50),
+    Region VARCHAR(50) NULL,
     ISO_Code VARCHAR(10),
     Created_At DATE default getdate()
 );
@@ -37,6 +40,6 @@ CREATE TABLE Observation (
     Updated_At DATE default getdate(),
     I_ID INT,
     C_ID INT,
-    FOREIGN KEY (I_ID) REFERENCES Indicator(Indicator_ID),
-    FOREIGN KEY (C_ID) REFERENCES Country(Country_ID)
+    FOREIGN KEY (I_ID) REFERENCES Indicator(Indicator_ID) ON DELETE CASCADE,
+    FOREIGN KEY (C_ID) REFERENCES Country(Country_ID) ON DELETE CASCADE
 );
